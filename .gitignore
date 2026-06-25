@@ -1,0 +1,6 @@
+.todo_env/
+venv/
+__pycache__/
+*.pyc
+instance/
+.env

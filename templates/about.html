@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block title %} About {% endblock title %}
+{% block body %}
+
+<div class="container my-5">
+    <div class="text-center">
+        <h1 class="mb-4">About ToDoz App</h1>
+        <p class="lead">
+            A simple and efficient task management application built with Flask and SQLite.
+        </p>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Our Mission</h3>
+            <p>
+                Our goal is to provide a clean and user-friendly platform that helps users
+                organize their daily tasks. This project demonstrates the fundamentals of
+                web development using Python Flask and SQLite.
+            </p>
+        </div>
+
+        <div class="col-md-6">
+            <h3>Features</h3>
+            <ul>
+                <li>Create new tasks</li>
+                <li>Update existing tasks</li>
+                <li>Delete completed tasks</li>
+                <li>Store data securely using SQLite</li>
+                <li>Responsive and easy-to-use interface</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="text-center">
+        <h3>Technologies Used</h3>
+
+        <div class="mt-4">
+            <span class="badge bg-primary fs-6 m-1">Python</span>
+            <span class="badge bg-success fs-6 m-1">Flask</span>
+            <span class="badge bg-secondary fs-6 m-1">SQLite</span>
+            <span class="badge bg-warning text-dark fs-6 m-1">HTML</span>
+            <span class="badge bg-danger fs-6 m-1">CSS</span>
+        </div>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="text-center">
+        <h3>Developer</h3>
+
+        <p>
+            This Todo application was developed as a learning project to practice
+            Flask, SQLite, CRUD operations, and web development concepts.
+        </p>
+
+        <p class="text-muted">
+            Thank you for visiting and using this application.
+        </p>
+    </div>
+
+</div>
+
+{% endblock %}
