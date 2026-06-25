@@ -7,6 +7,8 @@ app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///todoz.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
+with app.app_context():
+    db.create_all()
 
 class Todoz(db.Model):
     Sno = db.Column(db.Integer, primary_key=True)
@@ -55,6 +57,4 @@ def about():
     return render_template("/about.html")
 
 if __name__ == "__main__":
-    with app.app_context():
-        db.create_all()
     app.run(host="0.0.0.0", debug=True)
